@@ -29,7 +29,7 @@ public class HashController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "hello deploy 4";
+        return "hello";
     }
 
     private String getMD5Digest(String input) throws NoSuchAlgorithmException {
