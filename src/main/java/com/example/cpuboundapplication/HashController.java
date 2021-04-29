@@ -45,6 +45,11 @@ public class HashController {
     public String status() throws UnknownHostException {
 //
         String ipAddress = InetAddress.getLocalHost().getHostAddress();
-        return String.format("This server is running on host : %s, port : %s", ipAddress, env.getProperty("local.server.port"));
+        return String.format(
+                "This server is running on host : %s, port : %s, twosom property : name = %s",
+                ipAddress,
+                env.getProperty("local.server.port"),
+                env.getProperty("" +
+                        "twosom.property.name"));
     }
 }
