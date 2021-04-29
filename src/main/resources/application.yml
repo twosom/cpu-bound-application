@@ -5,4 +5,4 @@ server:
 twosom:
   property:
     name: twosom
-    message: twosom is here
+    message: Twosom Hello World
