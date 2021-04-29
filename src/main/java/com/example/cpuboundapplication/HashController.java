@@ -46,10 +46,10 @@ public class HashController {
 //
         String ipAddress = InetAddress.getLocalHost().getHostAddress();
         return String.format(
-                "This server is running on host : %s, port : %s, twosom property : name = %s",
+                "This server is running on host : %s, port : %s, twosom property : name = %s, twosom message : message = %s",
                 ipAddress,
                 env.getProperty("local.server.port"),
-                env.getProperty("" +
-                        "twosom.property.name"));
+                env.getProperty("twosom.property.name"),
+                env.getProperty("twosom.property.message"));
     }
 }
